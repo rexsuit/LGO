@@ -1,0 +1,127 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	transition: border 0.5s;
+	color: $color__text-input;
+	border: none;
+	border-bottom: 2px solid $color__border;
+	border-radius: 0;
+	padding: 5px 0;
+
+	&:active,
+	&:focus {
+		color: $color__text-input-focus;
+		border-bottom-color: $color__primary;
+	}
+}
+
+select {
+	border-radius: 0;
+	border: 1px solid $color__border-input;
+	background: $color__light;
+}
+
+textarea {
+	border-radius: 0;
+	width: 100%;
+}
+
+label {
+	color: $color__primary;
+	font-weight: 400;
+}
+
+.select2-container {
+	&.select2-container--default {
+		.select2-selection--single {
+			border-radius: 0;
+			border: none;
+			border-bottom: 2px solid $color__border;
+			height: 35px;
+			padding: 5px 0;
+			transition: border 0.5s;
+
+			.select2-selection__arrow {
+				top: 7px;
+				right: -5px;
+			}
+
+			.select2-selection__arrow b {
+				transition: border-color 0.5s;
+				border-color: $color__secondary transparent transparent;
+				border-width: 5px 6px 0;
+			}
+
+			&:hover,
+			&:focus {
+				border-bottom-color: $color__primary;
+			}
+
+			&:hover {
+				.select2-selection__rendered {
+					color: $color__primary;
+				}
+
+				.select2-selection__arrow b {
+					border-color: $color__primary transparent transparent;
+				}
+			}
+		}
+
+		&.select2-container--open .select2-selection--single {
+			.select2-selection__rendered {
+				color: $color__primary;
+			}
+
+			.select2-selection__arrow b {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	.select2-dropdown {
+		box-shadow: 0 4px 10px 0 rgba(3, 3, 3, 0.1);
+		border: 1px solid $color__border;
+
+		.select2-results__option--highlighted {
+			background-color: $color__primary;
+		}
+	}
+
+	.select2-container--open .select2-dropdown--above {
+		border-bottom: 1px;
+	}
+
+	.select2-container--open .select2-dropdown--below {
+		border-radius: 0;
+	}
+
+	&.select2-container--default .select2-results > .select2-results__options {
+		max-height: 260px;
+	}
+
+	.select2-search input {
+		border: none !important;
+		border-radius: 0 !important;
+		border-bottom: 2px solid #f1f2f4 !important;
+		transition: all 0.5s;
+
+		&:hover,
+		&:focus {
+			border-bottom-color: $color__primary !important;
+		}
+	}
+}

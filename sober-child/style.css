@@ -14,7 +14,160 @@ Template: sober
 
 /* Coming Soon page (remove when transitioning to full site) */
 
+
+/* hide unneeded stuff */
 #masthead {
   opacity: 0;
   pointer-events: none;
+  display: none;
+}
+
+.site-footer {
+  display: none;
+}
+
+#backtotop-arrow {
+  display: none;
+}
+
+
+.comingSoon__imageWrap {
+  object-fit: fill;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.comingSoon__mainImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  object-position: bottom;
+}
+
+.comingSoon__imgOverlay {
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  border: 4px solid #fff;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.comingSoon__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.comingSoon__comingSoonImg {
+  max-width: 70%;
+  margin-bottom: 48px;
+}
+
+.comingSoon__logo {
+  margin-bottom: 24px;
+}
+
+.comingSoon__slogan {
+  font-size: 38px;
+  font-style: italic;
+  color: #a4e5cd;
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.2em;
+  letter-spacing: 3px;
+}
+
+.comingSoon__storeLink {
+  font-size: 26px;
+  color: #a4e5cd;
+  border: 4px solid currentColor;
+  border-radius: 48px;
+  line-height: 1.7em;
+  padding: 6px 30px;
+  margin-bottom: 36px;
+}
+
+.comingSoon__storeLink:hover {
+  color: #0c0802
+}
+
+.comingSoon__lgoDescription {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  max-width: 350px;
+  color: #14523d;
+  text-align: center;
+  margin-bottom: 36px;
+  line-height: 1.3em;
+}
+
+.comingSoon__imageWrapMobile {
+  display: none;
+}
+
+.comingSoon__socialLinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.comingSoon__socialGroup {
+  font-size: 24px;
+  color: #14523d;
+}
+
+.comingSoon__socialGroup > a {
+  margin: 0 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .comingSoon__imageWrapDesktop {
+    display: none;
+  }
+
+  .comingSoon__imageWrapMobile {
+    display: block;
+  }
+  .comingSoon__imageWrap {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+  }
+
+  .comingSoon__imgOverlay {
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-width: 2px;
+  }
+
+  .comingSoon__mainImage {
+    height: 30vh;
+  }
+
+  .comingSoon__content {
+    min-height: unset;
+  }
+
+  .comingSoon__logo {
+    width: 60%;
+  }
+
+  .comingSoon__slogan {
+    font-size: 24px;
+  }
+  .comingSoon__storeLink {
+    font-size: 20px;
+  }
+  .comingSoon__comingSoonImg {
+    margin-top: 24px;
+  }
+
+  .comingSoon__socialLinks {
+    flex-direction: column;
+    align-items: center;
+  }
 }

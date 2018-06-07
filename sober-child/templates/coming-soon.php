@@ -28,9 +28,9 @@ get_header(); ?>
           <a href="mailto:hello@lgocrew.com" class="">hello@lgocrew.com</a>
         </span>
         <span class="comingSoon__socialGroup">
-          <a href="facebook.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="facebook.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/lgocrew/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/LGOcrew/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.pinterest.ca/lgocrew/"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
         </span>
         <span class="comingSoon__socialGroup">877 Alness st, unit 5</span>
       </div>

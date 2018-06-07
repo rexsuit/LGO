@@ -30,6 +30,10 @@ Template: sober
   display: none;
 }
 
+.sober-popup .popup-image img {
+  max-height: 300px;
+}
+
 
 .comingSoon__imageWrap {
   object-fit: fill;

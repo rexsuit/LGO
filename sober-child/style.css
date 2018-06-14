@@ -116,19 +116,20 @@ Template: sober
 
 .comingSoon__socialLinks {
   display: flex;
-  justify-content: space-around;
 }
 
 .comingSoon__socialGroup {
   font-size: 24px;
   color: #14523d;
+  flex-basis: 33.33%;
+  text-align: center;
 }
 
 .comingSoon__socialGroup > a {
   margin: 0 6px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .comingSoon__imageWrapDesktop {
     display: none;
   }
